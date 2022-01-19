@@ -2,7 +2,7 @@
 title: ActiveSwiper
 order: 0
 nav:
-  path: ./components
+  path: /components
 ---
 
 ## ActiveSwiper
