@@ -24,11 +24,11 @@ export default defineConfig({
   navs: [
     {
       title: '指南',
-      path: '/guide',
+      path: './guide',
     },
     {
       title: '组件',
-      path: '/components',
+      path: './components',
     },
     {
       title: 'GitHub',
@@ -38,6 +38,6 @@ export default defineConfig({
   cssLoader: {
     localsConvention: 'camelCase'
   },
-  publicPath: '/juln-rc/'
+  publicPath: './'
   // more config: https://d.umijs.org/config
 });
