@@ -37,6 +37,7 @@ export default defineConfig({
   ],
   cssLoader: {
     localsConvention: 'camelCase'
-  }
+  },
+  publicPath: './'
   // more config: https://d.umijs.org/config
 });
