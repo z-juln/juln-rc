@@ -9,9 +9,10 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'site',
   alias: {
-    'juln-rc': path.resolve(__dirname, './src')
+    'juln-rc': path.resolve(__dirname, './src'),
+    '@': path.resolve(__dirname, './src')
   },
-  locals: [
+  locales: [
     ['zh-CN', '中文'],
     ['en-US', 'English']
   ],

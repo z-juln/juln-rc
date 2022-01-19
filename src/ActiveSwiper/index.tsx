@@ -5,7 +5,7 @@ import './index.less';
 /* import types */
 import type { Swiper as SwiperInstance } from 'swiper';
 import type { SwiperProps } from 'swiper/react/swiper-react';
-import { getPrefixCls } from 'src/utils';
+import { getPrefixCls } from '@/utils';
 
 export const prefixCls = getPrefixCls('ActiveSwiper');
 

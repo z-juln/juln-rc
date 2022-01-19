@@ -11,7 +11,8 @@
     "declaration": true,
     "baseUrl": "./",
     "paths": {
-      "juln-rc": ["src"]
+      "juln-rc": ["src"],
+      "@/*": ["src/*"]
     }
   }
 }
