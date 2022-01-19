@@ -38,6 +38,6 @@ export default defineConfig({
   cssLoader: {
     localsConvention: 'camelCase'
   },
-  publicPath: './'
+  publicPath: '/juln-rc/'
   // more config: https://d.umijs.org/config
 });
