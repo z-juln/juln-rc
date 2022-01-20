@@ -17,7 +17,7 @@ export interface ActiveSwiperProps extends SwiperProps {
   children: (activeIndex: number) => React.ReactNode[];
   /** 与 swiper 的 slidesPerView 作用一致，但参数类型和默认值不同 */
   slidesPerView?: number;
-  /** tab切换时的下标偏离值 */
+  /** tab切换时的所展示的页面的下标偏移 */
   deviation?: number;
   onChangeActiveIndex?: (activeIndex: number) => void;
 }
