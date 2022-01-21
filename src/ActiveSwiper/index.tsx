@@ -67,12 +67,12 @@ export const ActiveSwiper: React.FC<ActiveSwiperProps> = ({
       {contents.map((content, index) => (
         <SwiperSlide
           key={index}
-          className={`${prefixCls}-slide`}
+          className={`${prefixCls}__slide`}
           onClick={() => toggleActiveIndex(index)}
         >
           <div
-            className={`${prefixCls}-option ${
-              activeIndex === index ? `${prefixCls}-option-active` : ''
+            className={`${prefixCls}__option ${
+              activeIndex === index ? `${prefixCls}__option--active` : ''
             }`}
           >
             {content}
