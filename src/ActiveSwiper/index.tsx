@@ -1,11 +1,11 @@
 import React, { memo, useEffect, useState } from 'react';
 import { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
+import { getPrefixCls } from '@/utils';
 import './index.less';
 /* import types */
 import type { Swiper as SwiperInstance } from 'swiper';
 import type { SwiperProps } from 'swiper/react/swiper-react';
-import { getPrefixCls } from '@/utils';
 
 export const prefixCls = getPrefixCls('ActiveSwiper');
 
@@ -22,7 +22,7 @@ export interface ActiveSwiperProps extends SwiperProps {
   onChangeActiveIndex?: (activeIndex: number) => void;
 }
 
-export const PlainSwiperWidthActive: React.FC<ActiveSwiperProps> = ({
+export const ActiveSwiper: React.FC<ActiveSwiperProps> = ({
   defaultActiveIndex = 0,
   activeIndex: forceActiveIndex,
   children: createChildren,
@@ -70,9 +70,11 @@ export const PlainSwiperWidthActive: React.FC<ActiveSwiperProps> = ({
           className={`${prefixCls}-slide`}
           onClick={() => toggleActiveIndex(index)}
         >
-          <div className={
-            `${prefixCls}-option ${activeIndex === index ? `${prefixCls}-option-active` : ''}`
-          }>
+          <div
+            className={`${prefixCls}-option ${
+              activeIndex === index ? `${prefixCls}-option-active` : ''
+            }`}
+          >
             {content}
           </div>
         </SwiperSlide>
@@ -81,4 +83,4 @@ export const PlainSwiperWidthActive: React.FC<ActiveSwiperProps> = ({
   );
 };
 
-export default memo(PlainSwiperWidthActive);
+export default memo(ActiveSwiper);
