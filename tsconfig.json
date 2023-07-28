@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "react",
-    "esModuleInterop": true,
-    "types": ["jest"],
     "strict": true,
-    "skipLibCheck": true,
     "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react",
     "baseUrl": "./",
     "paths": {
+      "@/*": ["src/*"],
+      "@@/*": [".dumi/tmp/*"],
       "juln-rc": ["src"],
-      "@/*": ["src/*"]
+      "juln-rc/*": ["src/*", "*"]
     }
-  }
+  },
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "typings.d.ts"]
 }

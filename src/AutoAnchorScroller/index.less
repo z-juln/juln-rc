@@ -1,0 +1,50 @@
+@import url(../style/index.less);
+
+@prefix: ~'@{basic-prefix}-AutoAnchorScroller';
+
+ul, li {
+  list-style-type: none;
+}
+
+.@{prefix} {
+  display: flex;
+  max-height: 100vh;
+  font-size: 12px;
+}
+
+.hiddenYScrollBar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.@{prefix}__sideBar {
+  height: 100%;
+  padding: 4px 10px;
+  .hiddenYScrollBar();
+  &-wrapper {
+    
+  }
+}
+
+@anchorActived: ~'data-@{basic-prefix}-anchor-actived';
+[@{anchorActived}='true'] {
+  color: red;
+}
+
+.@{prefix}__anchor {
+  height: 20px;
+}
+
+.@{prefix}__anchor > span {
+  background-color: inherit;
+}
+
+.@{prefix}__wrapper {
+  flex: 1;
+  .hiddenYScrollBar();
+}

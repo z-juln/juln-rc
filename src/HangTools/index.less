@@ -1,0 +1,41 @@
+@import url("../style/index.less");
+
+@prefix: ~'@{basic-prefix}-HangTools';
+
+.@{prefix} {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+
+    &__tool-container {
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__line {
+        width: 28px;
+        height: 1px;
+        background-color: rgba(0, 8, 26, 0.18);
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 22px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.08),
+            0 6px 24px rgba(0, 0, 0, 0.06);
+        background-color: #fff;
+    }
+
+    &__group + &__group {
+        margin-top: 10px;
+    }
+}

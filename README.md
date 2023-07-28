@@ -1,33 +1,21 @@
 # juln-rc
 
-## Getting Started
+[![NPM version](https://img.shields.io/npm/v/juln-rc.svg?style=flat)](https://npmjs.org/package/juln-rc)
+[![NPM downloads](http://img.shields.io/npm/dm/juln-rc.svg?style=flat)](https://npmjs.org/package/juln-rc)
 
-Install dependencies,
+- 有很多社区里没有的组件
+- 只提供最基础的功能, 没有太多样式, 让用户可以更好的自定义样式
 
-```bash
-$ npm i
-```
+<https://z-juln.github.io/juln-rc/>
 
-Start the dev server,
+## Usage
 
-```bash
-$ npm start
-```
+TODO
 
-Build documentation,
+## Options
 
-```bash
-$ npm run docs:build
-```
+TODO
 
-Run test,
+## LICENSE
 
-```bash
-$ npm test
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
+MIT

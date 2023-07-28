@@ -1,0 +1,18 @@
+@import url("../style/index.less");
+
+@prefix: ~'@{basic-prefix}-ModalHandler';
+
+.@{prefix} {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__modal {
+    position: absolute;
+    padding: 10px;
+    z-index: 5;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.1), 0 0 2px 0 rgba(0,0,0,.08);
+  }
+}

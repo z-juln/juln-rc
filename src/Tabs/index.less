@@ -1,0 +1,38 @@
+@import url(../style/index.less);
+
+@prefix: ~'@{basic-prefix}-Tabs';
+
+.@{prefix} {
+  overflow: hidden;
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  &__slide {
+    cursor: pointer;
+  }
+
+  &__option {
+    position: relative;
+    padding: 16px 0;
+  }
+
+  &__option--active::after {
+    .activeLine();
+
+    bottom: 16px;
+  }
+}
+
+.activeLine() {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  transform: translate(-50%, 7px);
+  content: '';
+}
