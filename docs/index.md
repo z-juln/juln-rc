@@ -1,7 +1,7 @@
 ---
 hero:
-  title: library
-  description: 有很多社区里没有的组件。只提供最基础的功能, 没有太多样式, 让用户可以更好的自定义样式
+  title: juln-rc
+  description: 有很多社区里没有的组件<br /><br />只提供最基础的功能, 没有太多样式, 让用户可以更好的自定义样式
   actions:
     - text: Hello
       link: /
