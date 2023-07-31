@@ -1,0 +1,1 @@
+.juln-rc-Tabs{overflow:hidden}.juln-rc-Tabs .swiper-wrapper{display:flex}.juln-rc-Tabs__slide{cursor:pointer}.juln-rc-Tabs__option{position:relative;padding:16px 0}.juln-rc-Tabs__option--active:after{position:absolute;bottom:0;left:50%;display:block;width:30px;height:3px;background-color:red;transform:translate(-50%,7px);content:"";bottom:16px}
