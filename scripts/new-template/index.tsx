@@ -7,6 +7,7 @@ const cls$ = getClsWithPrefix(subPrefix);
 
 export interface <%=name %>Props {
   className?: string;
+  children?: React.ReactNode;
 }
 
 const <%=name %>: React.FC<<%=name %>Props> = ({

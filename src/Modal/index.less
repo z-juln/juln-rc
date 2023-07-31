@@ -1,0 +1,47 @@
+@import '../style/function.less';
+@import '../style/index.less';
+
+@prefix: ~'@{basic-prefix}-Modal';
+
+.@{prefix} {
+  --zindex: 999;
+
+  &-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: --zindex;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: --zindex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // fixed a layer issue with animated Tabs in the x5 kernel browser
+    transform: translateZ(1px);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .@{prefix}-content {
+    background-color: #fff;
+  }
+
+  &__button-direction-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// 只有title，没有message时的样式
+.@{prefix}.@{prefix}-only-title {
+  // TODO
+}
