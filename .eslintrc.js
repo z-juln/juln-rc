@@ -1,5 +1,7 @@
+const path = require("path");
+
 module.exports = {
-  extends: ['@juln/fabric'],
+  extends: [path.resolve('@juln/fabric')],
 
   rules: {
     // your rules
