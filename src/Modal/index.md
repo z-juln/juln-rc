@@ -54,7 +54,9 @@ interface Action {
 type ReturnValue = { close: () => void };
 ```
 
-### 用户自定义样式, 可套用模板
+### 用户自定义样式, 可套用模板 (less 文件)
+
+_注： 使用 css、scss 等，可以参考这个 less 模板自行改动_
 
 ```less
 @prefix: ~'juln-rc-Modal';
@@ -104,8 +106,6 @@ type ReturnValue = { close: () => void };
 
 // 按钮组纵向排列时的样式
 .@{prefix} .@{prefix}__button-direction-column {
-  display: flex;
-  flex-direction: column;
   // TODO
   .@{prefix}__button {
     // TODO
