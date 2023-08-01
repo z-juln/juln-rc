@@ -25,13 +25,19 @@ demo:
 
 ### 参数
 
-```typescript
+````typescript
 interface AlertArgument {
   title: React.ReactNode;
   message: React.ReactNode;
-  actions?: Action[];
+  /** 默认为```{ actions: [{ text: '确定' }], direction: 'row' }``` */
+  actionProps?: {
+    actions?: Action[];
+    direction?: 'row' | 'column';
+  };
   className?: string;
   style?: React.CSSProperties;
+  /** 默认999 */
+  zIndex?: number;
 }
 
 interface Action {
@@ -40,7 +46,7 @@ interface Action {
   closeModal?: () => void;
   style?: React.CSSProperties;
 }
-```
+````
 
 ### 返回值
 

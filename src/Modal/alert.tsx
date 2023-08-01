@@ -23,12 +23,15 @@ const closest = (el: Element, selector: string) => {
 export interface AlertArgument {
   title?: React.ReactNode;
   message?: React.ReactNode;
+  /** 默认为```{ actions: [{ text: '确定' }], direction: 'row' }``` */
   actionProps?: {
     actions?: Action[];
     direction?: 'row' | 'column';
   };
   className?: string;
   style?: React.CSSProperties;
+  /** 默认999 */
+  zIndex?: number;
 }
 
 const alert = ({
@@ -40,6 +43,7 @@ const alert = ({
   },
   className = '',
   style,
+  zIndex = 999,
 }: AlertArgument) => {
   let closed = false;
 
@@ -117,6 +121,7 @@ const alert = ({
       maskTransitionName="am-fade"
       wrapProps={{ onTouchStart: onWrapTouchStart }}
       style={style}
+      zIndex={zIndex}
     >
       <div className={cls$('alert-content')}>{message}</div>
     </Modal>,

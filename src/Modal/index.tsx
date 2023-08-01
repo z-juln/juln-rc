@@ -16,6 +16,8 @@ export interface ModalProps extends ModalPropsType {
   wrapClassName?: string;
   wrapProps?: Partial<React.HTMLProps<HTMLDivElement>>;
   style?: React.CSSProperties;
+  /** 默认999 */
+  zIndex?: number;
   bodyStyle?: React.CSSProperties;
   children?: React.ReactNode;
 }
@@ -27,6 +29,7 @@ interface ModalComponent extends React.FC<ModalProps> {
 const Modal: ModalComponent = ({
   className,
   style,
+  zIndex = 999,
   wrapClassName,
   actionProps,
   operation = false,
@@ -103,7 +106,10 @@ const Modal: ModalComponent = ({
       })}
       transitionName={transitionName || transName}
       maskTransitionName={maskTransitionName || maskTransName}
-      style={style}
+      style={{
+        '--zindex': zIndex,
+        ...style,
+      }}
       footer={footerDom}
     />
   );
