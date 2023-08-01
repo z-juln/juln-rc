@@ -15,7 +15,6 @@ export interface ModalPropsType {
   animationType?: any;
   onAnimationEnd?: (visible: boolean) => void;
   animateAppear?: boolean;
-  operation?: boolean;
 }
 
 export interface Action {

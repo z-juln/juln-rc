@@ -53,3 +53,73 @@ interface Action {
 ```typescript
 type ReturnValue = { close: () => void };
 ```
+
+### 用户自定义样式, 可套用模板
+
+```less
+@prefix: ~'juln-rc-Modal';
+
+// 公用样式
+.@{prefix} {
+  .@{prefix}-footer {
+    // TODO
+    .@{prefix}__button {
+      // TODO
+    }
+  }
+}
+
+// help-utils
+.primary-button() {
+  // TODO
+}
+
+// 只有title，没有message时的样式
+.@{prefix}.@{prefix}__only-title {
+  // TODO
+}
+
+// 按钮组横向排列时的样式
+.@{prefix} .@{prefix}__button-direction-row {
+  display: flex;
+  justify-content: space-between;
+  // TODO
+  .@{prefix}__button {
+    // TODO
+    &:nth-child(2) {
+      // TODO
+      .primary-button();
+    }
+  }
+
+  // 横向 + 唯一button
+  &.@{prefix}__only-button {
+    // TODO
+    .@{prefix}__button {
+      // TODO
+      .primary-button();
+    }
+  }
+}
+
+// 按钮组纵向排列时的样式
+.@{prefix} .@{prefix}__button-direction-column {
+  display: flex;
+  flex-direction: column;
+  // TODO
+  .@{prefix}__button {
+    // TODO
+    &:first-child {
+      .primary-button();
+    }
+    & + .@{prefix}__button {
+      // TODO
+    }
+  }
+
+  // 纵向 + 唯一button
+  &.@{prefix}__only-button {
+    // TODO
+  }
+}
+```

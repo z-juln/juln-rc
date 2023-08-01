@@ -32,7 +32,6 @@ const Modal: ModalComponent = ({
   zIndex = 999,
   wrapClassName,
   actionProps,
-  operation = false,
   transparent = false,
   maskTransitionName,
   popup = false,
@@ -63,11 +62,9 @@ const Modal: ModalComponent = ({
 
   const footerDom = actions.length ? (
     <div
-      className={cls$(
-        `button-group-${actions.length === 2 && !operation ? 'h' : 'v'}`,
-        `button-group-${operation ? 'operation' : 'normal'}`,
-        `button-direction-${actionsDirection}`,
-      )}
+      className={cls$(`button-direction-${actionsDirection}`, {
+        'only-button': actions.length === 1,
+      })}
       role="group"
     >
       {actions.map((button) => renderFooterButton(button))}
