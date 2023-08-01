@@ -111,6 +111,7 @@ const Modal: ModalComponent = ({
         ...style,
       }}
       footer={footerDom}
+      zIndex={zIndex}
     />
   );
 };
