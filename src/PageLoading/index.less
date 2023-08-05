@@ -1,0 +1,36 @@
+@import url("../style/index.less");
+
+@prefix: ~'@{basic-prefix}-PageLoading';
+
+.@{prefix} {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+
+    &__icon {
+        animation: icon-rotate 1s infinite;
+        @keyframes icon-rotate {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 16px;
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-family: PingFang SC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+}

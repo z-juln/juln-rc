@@ -51,6 +51,7 @@
     ]
   },
   "dependencies": {
+    "@juln/type-fest": "^1.1.7",
     "classnames": "^2.3.2",
     "juln-hooks": "^1.1.13",
     "rc-util": "^5.35.0",

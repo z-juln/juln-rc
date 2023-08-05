@@ -1120,7 +1120,7 @@
 
 "@juln/type-fest@^1.1.7":
   version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@juln/type-fest/-/type-fest-1.1.7.tgz#335bd14481586450cef454952cb8ddd815637376"
+  resolved "http://npm.meitu-int.com/@juln%2ftype-fest/-/type-fest-1.1.7.tgz#335bd14481586450cef454952cb8ddd815637376"
   integrity sha512-auZGunEBtTJ17+Ewn3GSskhqW+DA+rdAWxGo8hOdIM1q0MkoNDFiv1gngseHODmLCOclnn2svc4yWsBil3Sx/g==
   dependencies:
     type-fest latest
